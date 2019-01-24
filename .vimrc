@@ -8,6 +8,13 @@ call plug#end()
 
 " Basic Config
 set nu relativenumber
+set ignorecase
+set smartcase
+
+nnoremap <silent> <M-h> <C-w>h
+nnoremap <silent> <M-j> <C-w>j
+nnoremap <silent> <M-k> <C-w>k
+nnoremap <silent> <M-l> <C-w>l
 
 "Colors
 colorscheme ron 
@@ -39,3 +46,5 @@ au BufNewFile,BufRead *.py
     \     expandtab
     \     autoindent
     \     fileformat=unix
+
+
